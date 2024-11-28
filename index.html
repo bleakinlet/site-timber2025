@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>timber</title>
+  
+  <link rel="icon" href="images/icon.png">
+  <link rel="stylesheet" href="css/index.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script>
+      $.get("left-sidebar.html", function (data) {
+          $("#left").replaceWith(data);
+      });
+
+      $.get("right-sidebar.html", function (data) {
+          $("#right").replaceWith(data);
+      });
+
+      $.get("links.html", function (data) {
+          $("#links").replaceWith(data);
+      });
+  </script>
+</head>
+<body>
+  <div id="body-container">
+      <div id="left"></div>
+      <div id="header">
+        <img class="no-interpolation" src="img/logo.png" height="100%">
+      </div>
+      <div id="links"></div>
+      <div id="body">
+        <h1>
+          welcome to the timberzone
+        </h1>
+        <p>
+          hello, my name is timber: i use he/they pronouns and live in a DESERT in the lovely UNITED STATES OF AMERICA
+        </p>
+        <h2>
+          funny website
+        </h2>
+        <p>
+          i draw, experiment with photography, and dabble with writing sometimes. i use this website as a portfolio and a place for random stuff. feel free to mess around and have fun! there are games, cool links, and places to explore if you get lost... enjoy the TIMBERZONE 
+        </p>
+      </div>
+      <div id="right"></div>
+  </div>
+  <div id="rantsona-box">
+    <img src="./img/rantsonatext.png">
+    <a href="https://www.youtube.com/watch?v=c9oOKqMjNUo"><img src="./img/rantsona.png"></a>
+  </div>
+  
+</body>
+</html>

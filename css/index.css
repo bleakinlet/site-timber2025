@@ -1,0 +1,166 @@
+:root {
+  --dakotagolden: rgb(254, 183, 59);
+  --darkdakotagolden: rgb(196, 84, 20);
+
+  --kayurple: rgb(168, 40, 248);
+  --darkkayurple: rgb(104, 13, 160);
+
+  --gnonex: #b00b69;
+
+  --gren: #69b00b;
+
+  --woke: rgb(0, 13, 12);
+}
+
+.no-interpolation {
+  image-rendering: crisp-edges;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background-image: url(/newsite/img/background.png);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+h2 {
+  margin: 0;
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+
+  font-size: 20px;
+}
+
+iframe {
+  padding: 0;
+  margin: 0;
+  border:0;
+}
+
+#body-container {
+  display: grid;
+  width: 1000px;
+  height: 900px;
+  grid-template-columns: 88px 5fr 1fr;
+  grid-template-rows: 100px 1fr 10fr;
+  grid-template-areas:
+  "left header right"
+  "left links right"
+  "left body right";
+  margin: 0 auto;
+  border-style: solid;
+  border-color: orange;
+}
+
+#left {
+  grid-area: left;
+  background-color: var(--woke);
+  display: flex;
+  flex-direction: column;
+  image-rendering: crisp-edges;
+}
+
+#header {
+  grid-area: header;
+  background-image: url(/newsite/img/headerbg.png);
+  background-position: 0px -100px;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#links {
+  grid-area: links;
+  display: flex;
+  justify-content: space-evenly;
+
+  max-height: 100px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--dakotagolden);
+}
+
+#links a {
+  color: var(--dakotagolden);
+  font-size: 50px;
+  font-family: "Monofett", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
+
+#links a:hover {
+  color: var(--darkdakotagolden) !important;
+}
+
+#links a:visited {
+  color: var(--dakotagolden);
+}
+
+#links img {
+  width: 100%;
+}
+
+#body {
+  background-color: var(--woke);
+  grid-area: body;
+
+  color: var(--dakotagolden);
+  font-size: 30px;
+  padding: 20px;
+}
+
+#body img {
+  max-width: 300px;
+}
+
+#right {
+  grid-area: right;
+  background-color: var(--woke);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dakotagolden);
+}
+
+#right img {
+  width: 100%;
+}
+
+#right p {
+  background-image: url(/newsite/img/ads.png);
+  background-size: cover;
+  font-size: 10px;
+  color: black;
+  padding: 10px;
+
+  height: 100px;
+}
+
+#rantsona-box {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+#rantsona-box img {
+  width: 5vw;
+  height: 100%;
+}
