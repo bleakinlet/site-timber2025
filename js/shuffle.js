@@ -10,6 +10,11 @@ const imageSources = [
     href: "https://www.youtube.com/watch?v=M9J6DKJXoKk"
   },
   {
+    src: "./img/ads/grenad.png",
+    alt: "grenad",
+    href: "../index.html"
+  },
+  {
     src: "./img/ads/music.gif",
     alt: "music",
     href: "./music.html"
