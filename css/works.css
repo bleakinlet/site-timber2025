@@ -1,0 +1,56 @@
+#art-box {
+  margin-top: 10px;
+  height: 300px;
+  background-color: rgba(0,0,0,0.2);
+
+  overflow-x: auto;
+  scrollbar-color: black black;
+
+  display: flex;
+}
+
+#art-box img {
+ max-width: 100% !important;
+
+}
+
+#gallery-header a { 
+  text-decoration: none;
+  color: var(--dakotagolden);
+}
+
+#gallery-header:hover {
+  color: black;
+  background-color: var(--dakotagolden);
+}
+
+#gallery-header a:hover {
+  color: black;
+}
+
+.game-box {
+  display: grid;
+  background-color: black;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+  "game-img game-title"
+  "game-img game-subtitle";
+}
+
+.game-image {
+  grid-area: "game-img";
+}
+
+.game-image img {
+  width: 200px;
+}
+
+.game-title {
+  grid-area: "game-title";
+}
+
+.game-subtitle {
+  grid-area: "game-subtitle";
+}
