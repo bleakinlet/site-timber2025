@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIMBERZONE - WORKS</title>
+  
+  <link rel="icon" href="images/icon.png">
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/works.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script>
+      $.get("left-sidebar.html", function (data) {
+          $("#left").replaceWith(data);
+      });
+
+      $.get("links.html", function (data) {
+          $("#links").replaceWith(data);
+      });
+  </script>
+</head>
+<body>
+  <body>
+    <div id="body-container">
+        <div id="left"></div>
+        <div id="header"></div>
+        <div id="links"></div>
+        <div id="body">
+          <h1>
+            WORKS
+          </h1>
+          <p>
+            This is a page to show what I've worked on! Each are categorized by their medium, with ART, GAMES, and MUSIC listed below.
+          </p>
+          <div id="gallery-header"><a href="./gallery.html"><h2>
+            ART GALLERY
+          </h2></a>
+          </div>
+          <p>
+            All my art is done on a 6th generation iPad using Procreate. Click the header to be brought to my gallery!
+          </p>
+          <div id="art-box">
+            <img src="./img/gallery/me-thumb.jpg">
+            <img src="./img/gallery/vee-thumb.jpg">
+            <img src="./img/gallery/sona-thumb.jpg">
+            <img src="./img/gallery/samroof-thumb.jpg">
+            <img src="./img/gallery/yellowstone-thumb.jpg">
+          </div>
+
+          <h2>
+            GAMES
+          </h2>
+          <p>
+            SOLAR HOGIHAWY!!!!!!!!!!!
+          </p>
+          <div class="game-box">
+            <div class="game-image">
+              <img src="./img/chefbmx.png">
+            </div>
+            <div class="game-title">
+              TITLE
+            </div>
+            <div class="game-subtitle">
+              SUBTITLE
+            </div>
+          </div>
+        </div>
+        <div id="right">
+            <img src="img/ads/ads.png">
+            <a href=""><img class="shuffle" src="" alt=""></a>
+            <a href=""><img class="shuffle" src="" alt=""></a>
+            <a href=""><img class="shuffle" src="" alt=""></a>
+            <a href=""><img class="shuffle" src="" alt=""></a>
+    </div>
+</body>
+<script src="./js/shuffle.js"></script> 
+</html>
