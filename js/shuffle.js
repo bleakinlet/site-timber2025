@@ -15,6 +15,11 @@ const imageSources = [
     href: "../index.html"
   },
   {
+    src: "./img/ads/FUZZ.jpg",
+    alt: "FUZZ",
+    href: "../skarNET/console.html"
+  },
+  {
     src: "./img/ads/music.gif",
     alt: "music",
     href: "./music.html"

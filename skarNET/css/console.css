@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-size: 25px;
+
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "ROND" 0;
+}
+
+a:visited {
+    color: blue;
+}
+
+body {
+    height: 90vh;
+    overflow-y: hidden;
+    background-color: black;
+
+    line-height: 1.5;
+    /*
+
+    get out of here
+
+    the highest metric
+    of fuzz you can
+    consume is only
+    partial fire of
+    the amount in
+    where we are
+    found in this
+    spinning spinning
+    world
+
+    background-image: url("../img/SUN.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    */
+}
+
+strong {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+#console {
+    display: grid;
+
+    background: rgb(0, 0, 0);
+    max-width: 1000px;
+
+    color: orange;
+
+    margin: 10vh auto;
+    padding: 10px;
+
+    grid-template-rows: 500px 50px;
+    
+
+}
+
+#text {
+    border: orange solid 0px;
+    border-bottom: 1px;
+}
+
+#enter {
+    opacity: 0;
+    animation: disappear 1s forwards 0s infinite alternate;
+}
+
+#enter:hover {
+    cursor:not-allowed;
+}
+  
+  /* The animation code */
+  @keyframes disappear {
+      from {opacity: 0;}
+      to {opacity: 1;}
+  }
+
+/*
+body {
+    line-height: 1.5;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav content sidebar"
+    "nav footer footer";
+
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px 1fr 80px;
+}
+
+header,
+footer,
+main,
+aside,
+nav {
+   background-color: steelblue;
+   color: white;
+   padding: 20px;
+   border: skyblue 1px solid;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: content;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*
+#body-container {
+    max-width: 960px;
+    margin: 100px auto;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    /* 
+    grid-template-rows: 200px 100px 200px;
+    grid-auto-rows: minmax(100px, auto);  
+    gap: 5px;
+    align-items: center;
+
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.line-box {
+    background: steelblue;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border: skyblue 1px solid;
+}
+    /*
+.line-box:nth-of-type(1) {
+    grid-column: 1 / 3;
+}
+
+.line-box:nth-of-type(4) {
+    grid-row: 2 / 4;
+}
+
+@media(max-width: 500px) {
+    #body-container {
+        grid-template-column: 1fr;
+    }
+    */
