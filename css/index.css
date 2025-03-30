@@ -1,5 +1,6 @@
 :root {
   --dakotagolden: rgb(254, 183, 59);
+  --lightdakotagolden: rgb(255, 195, 92);
   --dakotagoldenlist: rgb(240, 151, 50);
   --darkdakotagolden: rgb(196, 84, 20);
 
@@ -128,6 +129,67 @@ li:nth-child(even)  {
   margin: 0 auto;
   border-style: solid;
   border-color: orange;
+}
+
+.body-separator {
+  display: flex;
+  flex-direction: row;
+}
+
+#body-right {
+  width: 100%;
+  max-width: 375px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkbox {
+  display: flex;
+}
+
+.linkbox a { 
+  font-size: 25px;
+  color: var(--lightdakotagolden)
+}
+
+.linkbox img {
+  margin: 0px 10px 10px 10px;
+}
+
+#body-right img {
+  width: 40px;
+}
+
+#body-left {
+  width: 350px;
+}
+
+#card-header {
+  height: 100px;
+}
+
+#card-icon {
+  border: 5px var(--dakotagolden) solid;
+  border-top: 0;
+  border-bottom: 0;
+  height: 425px;
+}
+
+#card-body {
+  color: var(--darkdakotagolden);
+  background-color: var(--dakotagolden);
+
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px;
+  text-align: center;
+
+  background-image: url(../img/card-bg.png);
+  background-size: cover;
+
 }
 
 #left {
