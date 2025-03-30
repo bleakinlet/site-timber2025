@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+#body-container {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+#left-body {
+  height: 100vh;
+  max-width: 20vw;
+  background-color: rgb(255, 255, 255);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px;
+  color: black;
+}
+
+#left-body img {
+  max-width: 20vw;
+}
+
+#left-body p {
+  font-size: 2vw;
+}
+
+#left-body a {
+  font-size: 4vw;
+}
+
+#left-body a:visited { 
+  color: black;
+}
+
+#gallery {
+  background-color: rgb(220, 220, 220);
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery-column img {
+  max-width: 26.2vw;
+  padding: 5px;
+}
+
+.image-block {
+  position: relative;
+  transition: all .1s ease;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.image-block h1 {
+  font-size: 3vw;
+  color: white;
+  position: absolute;
+  bottom: 0.75vw;
+  left: 0.5vw;
+
+  filter:drop-shadow(10px 10px 4px #0000)
+}
+
+.image-block p {
+  font-size: 1vw;
+  color: white;
+  position: absolute;
+  bottom: 0.5vw;
+  left: 0.5vw;
+}
+
+.image-block:hover {
+  scale:1.05;
+}
+
+

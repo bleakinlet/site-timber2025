@@ -24,7 +24,43 @@
   <img src="img/banners/banner14.gif">
   <img src="img/banners/banner15.png">
   <img src="img/banners/banner16.gif">
+  <a href="https://www.lexaloffle.com/pico-8.php"><img src="img/banners/banner17.gif"></a>
 
 </div>
 </body>
+<script>
+  let isInverted = false;
+
+  const left = document.querySelectorAll("#left img")
+  let booty = 0;
+
+  const filterButton = document.getElementById("filter-button");
+  filterButton.addEventListener("click", function(filterEffect) {
+    if (booty == 0) {
+            left.forEach(img => {
+              img.style.filter = "invert(1)"
+            });
+            booty = 1;
+        } else if (booty == 1) {
+            left.forEach(img => {
+              img.style.filter = "hue-rotate(270deg)"
+            });
+            booty = 2;
+        } else if (booty == 2) {
+          left.forEach(img => {
+              img.style.filter = "hue-rotate(0deg)"
+            });
+            booty = 3;
+        } else if (booty == 3) {
+            booty = 4;
+        } else if (booty == 4) {
+            booty = 5;
+        } else {
+          left.forEach(img => {
+              img.style.filter = "none"
+            });
+            booty = 0;
+        }
+    });
+</script>
 </html>

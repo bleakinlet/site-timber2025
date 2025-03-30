@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TIMBERZONE - WORKS</title>
+  <title>Timbertoast - Works</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
   
-  <link rel="icon" href="images/icon.png">
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/works.css" />
 
@@ -13,7 +13,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+  <meta content="Timbertoast - Works" property="og:title" />
+  <meta content="Works page for Timbertoast" property="og:description" />
+  <meta content="https://timbertoast.org" property="og:url" />
+  <meta content="./img/icon.png"
+      property="og:image" />
+  <meta content="#FEB73B" data-react-helmet="true" name="theme-color" />
 
   <script src="//code.jquery.com/jquery.min.js"></script>
   <script>
@@ -57,28 +62,49 @@
           <h2>
             GAMES
           </h2>
-          <p>
-            SOLAR HOGIHAWY!!!!!!!!!!!
-          </p>
+          <p>Click the images to be brought to their page!</p>
           <div class="game-box">
             <div class="game-image">
-              <img src="./img/chefbmx.png">
+              <a href="https://timbertoast.itch.io/solar-highway"><img src="./img/sh.png"></a>
             </div>
-            <div class="game-title">
-              TITLE
+            <div class="game-title" style="background-color: rgb(88, 26, 26); color:rgb(255, 73, 73)">
+              <strong>SOLAR HIGHWAY</strong>
             </div>
-            <div class="game-subtitle">
-              SUBTITLE
+            <div class="game-subtitle" style="color:rgb(255, 101, 90)">
+              <p><strong>RELEASED:</strong> APRIL 2022 | itch.io</p>
+              <p><strong>PLATFORM:</strong> TTRPG</p>
+              <i>A TTRPG about traveling the entropic universe with your friends.</i>
             </div>
           </div>
+
+          <div class="game-box">
+            <div class="game-image">
+              <a href="https://timbertoast.itch.io/chefbmx"><img src="./img/chefbmx.png"></a>
+            </div>
+            <div class="game-title" style="background-color: rgb(239, 229, 151)">
+              <strong>CHEFBMX</strong>
+            </div>
+            <div class="game-subtitle" style="color: rgb(254, 247, 169)">
+              <p><strong>RELEASED:</strong> MARCH 2022 | itch.io</p>
+              <p><strong>PLATFORM:</strong> PICO-8</p>
+              <i>A text based game about riding a bike to the top of the mountain, cooking meals and dealing with bears along the way.</i>
+            </div>
+          </div>
+          <div id="transmission" style="display: flex; justify-content: center;">
+            <a href="./skarNET/console.html"><img src="./img/transmission.gif" style="margin-top: 100px"></a>
+          </div>
+          
         </div>
         <div id="right">
             <img src="img/ads/ads.png">
+            <button id="filter-button" type="button">FILTER</button>
             <a href=""><img class="shuffle" src="" alt=""></a>
             <a href=""><img class="shuffle" src="" alt=""></a>
             <a href=""><img class="shuffle" src="" alt=""></a>
             <a href=""><img class="shuffle" src="" alt=""></a>
     </div>
+
 </body>
-<script src="./js/shuffle.js"></script> 
+<script src="./js/shuffle.js"></script>
+<script src="./js/filters.js"></script> 
 </html>

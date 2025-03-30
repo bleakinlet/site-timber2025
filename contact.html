@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TIMBERZONE - HOME</title>
+  <title>Timbertoast - Contact</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
   
-  <link rel="icon" href="images/icon.png">
   <link rel="stylesheet" href="css/index.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+  <meta content="Timbertoast - Contact" property="og:title" />
+  <meta content="Contact page for Timbertoast" property="og:description" />
+  <meta content="https://timbertoast.org" property="og:url" />
+  <meta content="./img/icon.png"
+      property="og:image" />
+  <meta content="#FEB73B" data-react-helmet="true" name="theme-color" />
 
   <script src="//code.jquery.com/jquery.min.js"></script>
   <script>
@@ -54,7 +59,7 @@
           Bluesky
         </h2>
         <p>I'm over on bluesky as 
-        <a href="https://bsky.app/profile/timbertoast.bsky.social" style="color: #1185FE">timbertoast</a>
+        <a href="https://bsky.app/profile/timbertoast.org" style="color: #1185FE">timbertoast</a>
       </p>
         <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:nn4ygm5ump6sak6snpsqct7n/app.bsky.feed.post/3l66e5qfgw72k" data-bluesky-cid="bafyreif6eksrlce7rbxqqmfwz2imrh7aumlshb3mlhlgcmosvri5wyb3qu"><p lang="en">hello fwllow bluesky users</p>&mdash; timbertoast - opencomms (<a href="https://bsky.app/profile/did:plc:nn4ygm5ump6sak6snpsqct7n?ref_src=embed">@timbertoast.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:nn4ygm5ump6sak6snpsqct7n/post/3l66e5qfgw72k?ref_src=embed">October 10, 2024 at 11:16 AM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
         <h2 style="background-color: #000000; color:white">
@@ -70,12 +75,18 @@
           <img src="./img/lastfm.png" style="width:100px; filter:brightness(0) invert(1); margin-left: 5px;">
         </h2>
         <p>
-          I am over on last.fm 
-          <a href="https://www.last.fm/user/Crowyo" style="color: #c7382F">here!</a>
+          <iframe
+            title="last.fm scrobbles"
+            width="404"
+            height="338"
+            style="border:none;margin-top:10px;"
+            src="https://lastfm-recently-played.vercel.app/api?user=Crowyo">
+          </iframe>
         </p>              
         </div>
       <div id="right">
         <img src="img/ads/ads.png">
+        <button id="filter-button" type="button">FILTER</button>
         <a href=""><img class="shuffle" src="" alt=""></a>
         <a href=""><img class="shuffle" src="" alt=""></a>
         <a href=""><img class="shuffle" src="" alt=""></a>
@@ -89,4 +100,5 @@
   
 </body>
 <script src="./js/shuffle.js"></script> 
+<script src="./js/filters.js"></script>
 </html>

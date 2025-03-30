@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TIMBERZONE - HOME</title>
+  <title>Timbertoast - Home</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
   
-  <link rel="icon" href="images/icon.png">
   <link rel="stylesheet" href="css/index.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+  <meta content="Timbertoast - Home" property="og:title" />
+  <meta content="Home of All Things Timber and Toast" property="og:description" />
+  <meta content="https://timbertoast.org" property="og:url" />
+  <meta content="./img/icon.png" property="og:image" />
+  <meta content="#FEB73B" data-react-helmet="true" name="theme-color" />
 
   <script src="//code.jquery.com/jquery.min.js"></script>
   <script>
@@ -23,13 +27,18 @@
       $.get("links.html", function (data) {
           $("#links").replaceWith(data);
       });
-
+      
   </script>
 </head>
 <body>
+
+
+
   <div id="floating-me">
     <marquee><img src="./img/floating.png"></marquee>
   </div>
+
+
   <div id="body-container">
       <div id="left"></div>
       <div id="header">
@@ -48,15 +57,21 @@
         <p>
           i draw, experiment with photography, and dabble with writing sometimes. i use this website as a portfolio and a place for random stuff. feel free to mess around and have fun! there are games, cool links, and places to explore if you get lost... enjoy the TIMBERZONE 
         </p>
+
+        <div id="lights">
+          <img src="./img/lights.png">
+        </div>
       </div>
       <div id="right">
         <img src="img/ads/ads.png">
+        <button id="filter-button" type="button">FILTER</button>
         <a href=""><img class="shuffle" src="" alt=""></a>
         <a href=""><img class="shuffle" src="" alt=""></a>
         <a href=""><img class="shuffle" src="" alt=""></a>
         <a href=""><img class="shuffle" src="" alt=""></a>
       </div>
   </div>
+  
   <div id="rantsona-box">
     <img src="./img/rantsonatext.png">
     <a href="https://www.youtube.com/watch?v=c9oOKqMjNUo"><img src="./img/rantsona.png"></a>
@@ -64,4 +79,5 @@
   
 </body>
 <script src="./js/shuffle.js"></script> 
+<script src="./js/filters.js"></script>
 </html>

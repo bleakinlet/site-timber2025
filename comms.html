@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TIMBERZONE - HOME</title>
+  <title>Timbertoast - Comms</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
   
-  <link rel="icon" href="images/icon.png">
   <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/works.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+  <meta content="Timbertoast - Commissions" property="og:title" />
+  <meta content="Commissions page for Timbertoast" property="og:description" />
+  <meta content="https://timbertoast.org" property="og:url" />
+  <meta content="./img/icon.png"
+      property="og:image" />
+  <meta content="#FEB73B" data-react-helmet="true" name="theme-color" />
 
   <script src="//code.jquery.com/jquery.min.js"></script>
   <script>
@@ -33,24 +39,13 @@
       </div>
       <div id="links"></div>
       <div id="body">
-        <h1>Commission Information</h1>
+        <img alt="Commissions" src="/img/commissions.png">
         <p>
-            Hello! I'm Timber, I do digital art commissions. If you're interested in one, contact me on Bluesky with your ideas for a commission!
+            Hello! I'm Timber, I do digital art commissions. If you're interested in one, contact me on <a style="color: lightblue" href="https://bsky.app/profile/timbertoast.org">Bluesky</a> with your ideas for a commission!
         </p>
-            <h2>Workflow</h2>
-            <li style="margin-top:10px;">
-                After payment, I will give a general sketch. Big revisions can be made!
-            </li>
-            <li>
-                If everything is good, I will finalize it. Minor revisions can be made! 
-            </li>
-            <li>
-                If finished, I'll send uncompressed <b>.tifs</b> with <b>Google Drive</b>, including a <b>PSD</b>.
-            </li>
-        
             <h2>TOS and Notes</h2>
             <li style="margin-top:10px;">
-                All my prices are in <b>USD</b> and are through <b>Paypal</b>.
+                All my prices are in <b>USD</b> and are through <b>Paypal invoices</b>.
             </li>
             <li>
                 I might not be able to draw very complicated things or things I am not comfortable with, I will let you know if this is the case! 
@@ -65,15 +60,36 @@
                 <b>I won't do refunds!!!</b> If it is something I've completely messed up on, like a very long wait time (months), then I will refund you!
             </li>
 
-            <h2>Commission Options</h2>
-            <h2>Standard Painting</h2>
-            <h3>PRICE: $50</h3>
+            <h2>Workflow</h2>
+            <li style="margin-top:10px;">
+                After payment, I will give a general sketch. Big revisions can be made!
+            </li>
+            <li>
+                If everything is good, I will finalize it. Minor revisions can be made! 
+            </li>
+            <li>
+                If finished, I'll send uncompressed <b>.tifs</b> with <b>Google Drive</b>, including a <b>PSD</b>.
+            </li>
+        
+            <div style="display: flex; justify-content: center;">
+                <img style="margin: 50px 0px 20px 0px;"alt="Commission Options" src="/img/commissionoptions.png">
+            </div>
+            <h2 style="margin-top: 0;">Standard Painting</h2>
+            <h3>PRICE: $45</h3>
             <p>
                 This painting style is the one I like doing the most. It includes a fullbody character and background in color! Feel free to suggest background and pose ideas, or just let me go wild with it!!!
             </p>
+            <div id="art-box">
+                <img src="./img/gallery/me-thumb.jpg">
+                <img src="./img/gallery/vee-thumb.jpg">
+                <img src="./img/gallery/sona-thumb.jpg">
+                <img src="./img/gallery/samroof-thumb.jpg">
+                <img src="./img/gallery/yellowstone-thumb.jpg">
+              </div>
       </div>
       <div id="right">
         <img src="img/ads/ads.png">
+        <button id="filter-button" type="button">FILTER</button>
         <a href=""><img class="shuffle" src="" alt=""></a>
         <a href=""><img class="shuffle" src="" alt=""></a>
         <a href=""><img class="shuffle" src="" alt=""></a>
@@ -83,4 +99,5 @@
 
 </body>
 <script src="./js/shuffle.js"></script> 
+<script src="./js/filters.js"></script>
 </html>

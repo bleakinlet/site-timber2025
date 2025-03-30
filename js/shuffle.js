@@ -12,7 +12,7 @@ const imageSources = [
   {
     src: "./img/ads/grenad.png",
     alt: "grenad",
-    href: "../index.html"
+    href: "https://nandogren.neocities.org/"
   },
   {
     src: "./img/ads/FUZZ.jpg",
