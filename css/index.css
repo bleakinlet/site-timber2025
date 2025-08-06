@@ -25,6 +25,10 @@
 
 }
 
+html {
+    background-color: black;
+}
+
 body {
   position: relative;
   margin: 0;
@@ -51,6 +55,7 @@ body::before {
 
 
   height: 100%;
+
 }
 
 img {
@@ -138,12 +143,10 @@ li:nth-child(even)  {
 
 #body-right {
   width: 100%;
-  max-width: 375px;
+
   margin-left: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .linkbox {
@@ -163,6 +166,10 @@ li:nth-child(even)  {
   width: 40px;
 }
 
+#body-right h2 {
+  margin-bottom: 10px;
+}
+
 #body-left {
   width: 350px;
 }
@@ -176,6 +183,7 @@ li:nth-child(even)  {
   border-top: 0;
   border-bottom: 0;
   height: 425px;
+  width: 350px;
 }
 
 #card-body {
@@ -254,7 +262,7 @@ li:nth-child(even)  {
 
   color: var(--dakotagolden);
   font-size: 30px;
-  padding: 30px;
+  padding: 10px;
 }
 
 #right {
@@ -262,7 +270,6 @@ li:nth-child(even)  {
   background-color: var(--dakotagolden);
   display: flex;
   flex-direction: column;
-
 
   overflow: scroll;
   overflow-x: hidden;
@@ -300,8 +307,10 @@ li:nth-child(even)  {
 }
 
 #lights {
-  width: 120%;
-  margin: 30px 0 -40px -30px;
+  width: 111%;
+  margin-left: -11px;
+  margin-bottom: -20px;
+
 }
 
 #filter-button {
