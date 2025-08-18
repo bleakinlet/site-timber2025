@@ -20,6 +20,11 @@ const imageSources = [
     href: "../skarNET/console.html"
   },
   {
+    src: "./img/ads/games.gif",
+    alt: "GAMEZ",
+    href: "./works.html"
+  },
+  {
     src: "./img/ads/music.gif",
     alt: "music",
     href: "./music.html"
