@@ -28,6 +28,11 @@ const imageSources = [
     src: "./img/ads/music.gif",
     alt: "music",
     href: "./music.html"
+  },
+  {
+    src: "./img/treegif.gif",
+    alt: "tree",
+    href: "./treezone.html"
   }
 ];
 
