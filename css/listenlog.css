@@ -87,7 +87,8 @@ a:visited {
   text-align: start;
   overflow-y: scroll;
 
-  height: 300px;
+  min-height: 300px;
+  max-height: 500px;
 }
 
 .description-box p {
